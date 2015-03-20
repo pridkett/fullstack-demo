@@ -1,0 +1,12 @@
+---
+# manifest.yml for fullstack-demo
+# edit for your needs
+applications:
+- name: fullstack-demo
+  instances: 1
+  framework: node
+  description: Your generator-angular-fullstack-bluemix project
+  memory: 128M
+  command: NODE_ENV=production node server/app.js
+  domain: mybluemix.net
+  host: fullstack-demo
